@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  homework3:
+    image: domdiej/homework3
+    build: .
+    container_name: homework3
+    ports:
+      - "80:3000"
+    environment:
+      - PORT=3000
+    volumes:
+      - ./:/app 
+    command: ["node", "app.js"]
