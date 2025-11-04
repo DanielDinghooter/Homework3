@@ -1,7 +1,7 @@
 FROM node:18-alpine
 
 # set directory
-WORKDIR /node_modules
+WORKDIR /app
 
 # # Copy package files first and install dependencies
 # COPY packages*.json ./
@@ -12,8 +12,8 @@ COPY . .
 
 #Expose port number 3k
 
-EXPOSE 3000
+EXPOSE 80
 
 # Start the app
 
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
