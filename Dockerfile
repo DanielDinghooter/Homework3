@@ -1,7 +1,7 @@
 FROM node:18-alpine
 
 # set directory
-WORKDIR /app
+WORKDIR /node_modules
 
 # # Copy package files first and install dependencies
 # COPY packages*.json ./
