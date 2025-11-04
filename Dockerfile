@@ -12,7 +12,7 @@ COPY . .
 
 #Expose port number 3k
 
-EXPOSE 80
+EXPOSE 3000
 
 # Start the app
 
